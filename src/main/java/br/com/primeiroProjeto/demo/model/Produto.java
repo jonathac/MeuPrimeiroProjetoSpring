@@ -15,8 +15,6 @@ import javax.persistence.Table;
 @SequenceGenerator(name = "produto", allocationSize = 1, sequenceName = "sq_produto")
 public class Produto {
 	
-//	INSERT INTO TB_PRODUTO (ID,NOME,QUANTIDE) VALUES(SQ.NEXTVAL,NOME,QUANTIDADE);
-	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY, generator = "produto")
 	@Column(name = "cd_produto")
